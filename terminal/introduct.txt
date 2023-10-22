@@ -1,0 +1,15 @@
+uninstall and install again terminal in microsoft
+dowload
+scoop
+use scoop dow oh-my-posh
+and create notepad $PROFILE, theme.omp.json in scoop app oh-my-posh
+copy theme in wed oh-my-posh
+
+install
+Install-Module -Name Terminal-Icons -Repository PSGallery -Force
+Import-Module Terminal-Icons
+
+Install-Module -Name  PSReadline -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
+Set-PSReadlineOption -PredictionViewStyle ListView
+
+

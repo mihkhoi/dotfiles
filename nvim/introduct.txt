@@ -1,0 +1,15 @@
+Dowload:
+neovim
+git 
+python
+nodejs
+
+use command
+npm install neovim -g
+pip install pynvim
+
+i am use vim plug do manage plugin
+
+after paste file new config in file nvim
+and pluginstall
+end

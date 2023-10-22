@@ -1,0 +1,72 @@
+## Hướng dẫn configneovim
+# 1. Cài đặt neovim theo trang chủ:
+  - Tải neovim: https://neovim.io/
+  - Tải scoop : https://scoop.sh/
+  - Tải chocolatey: https://chocolatey.org/
+
+# 2. Cài đăt môi trường cho plugin:
+  - Tải git: https://git-scm.com/downloads
+  - Tải python: https://www.python.org/downloads/
+  - Tải nodejs: https://nodejs.org/en/download/current
+  
+  Vào terminal kiểm tra đã cài đặt git, python, nodejs chưa:
+
+  git
+  ```sh
+  git --version
+  ```
+  python
+  ```sh
+  python --version
+  ```
+  nodejs
+  ```sh
+  node --version
+  ```
+   Cài đăt npm với pip:
+
+  ```sh
+  npm install neovim -g
+  ```
+
+  ```sh
+  pip install pynvim
+  ```
+  Sau đó vào neovim ghi :checkhealth để kiểm tra cai đặt đủ các môi trường cần cho plugin chưa
+  
+# 3. Cài plugin-manager
+  - Tải plugin-manager: https://github.com/junegunn/vim-plug
+# 4. Tải file config xuống
+  Tạo folder nvim theo đường dẫn: C:\Users\lolme\AppData\Local 
+
+  Rồi tải file config vào đường dẫn: https://github.com/mihkhoi/config-neovim/tree/main/Config%20neovim
+
+  Tạo thêm folder plugged trong folder nvim
+
+# 5. Cài đặt các plugin
+  Mở terminal trong folder nvim
+
+  Nhập:
+  ```sh
+  nvim init.vim
+  ```
+  Ghi :PlugInstall để tải các plug xuống
+
+# 6. Cài lsp
+  Mở nvim lên rồi nhập :CocInstall coc-...
+
+  vd:
+
+   cài lsp C++  :CocInstall coc-clangd
+
+  Tham khảo thêm các coc extention: https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions
+
+  Có thể config lsp bằng file coc-settings.json
+
+  Ghi :CocConfig
+
+  Tham khảo thêm: https://github.com/neoclide/coc.nvim/wiki/Language-servers
+
+ Muốn hiểu thêm về các plug và cài đặt chi tiết có thể xem ở anh vunguyencoder: https://www.youtube.com/watch?v=Tp8i1EHsQ1Q&t=3s 
+
+ Cài đăt terminal có thể tham khảo: https://www.youtube.com/watch?v=fviSilPKIhs&list=WL&index=6
