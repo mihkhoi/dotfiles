@@ -27,7 +27,7 @@ set guifont=JetBrainsMono\ Nerd\ Font:h13
 "set guifont=Hack\ Nerd\ Font
 "set guifont=Hack\ NF
 " Set format of tab name 
-set guitablabel=\[%N\]\ %t\ %M 
+"set guitablabel=\[%N\]\ %t\ %M 
 
 " Show diagnostics sign on number
 set signcolumn=number

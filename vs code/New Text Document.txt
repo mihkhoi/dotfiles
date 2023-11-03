@@ -1,0 +1,34 @@
+{
+    "code-runner.runInTerminal": true,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "C_Cpp.updateChannel": "Insiders",
+    "editor.fontSize": 20,
+    "editor.tabSize": 7,
+    "workbench.iconTheme": "vscode-icons",
+    "vscode-pets.position": "explorer",
+    //POWER MODE
+    "powermode.explosions.backgroundMode": "image",
+    "powermode.enabled": true,
+    "powermode.combo.threshold": 3,
+    "powermode.shake.enabled": false,
+    "powermode.combo.counterSize": 2,
+    "powermode.explosions.customExplosions": [
+        
+
+    "https://media.giphy.com/media/WOb8EeFziTQNE02WXs/giphy.gif"
+      
+    ],
+    "powermode.explosions.duration" : 1700, 
+    "powermode.explosions.size" : 7,
+    "powermode.maxExplosions" : 1,
+    "powermode.explosions.frequency": 6,
+    "powermode.explosions.offset": 0.5,
+    "powermode.shake.intensity": 0,
+    "powermode.explosions.customCss": {
+    "position":"absolute",
+    "transform":"translate(-0,1%, -0,1%)",
+    },
+    "vscode-pets.theme": "castle",
+}

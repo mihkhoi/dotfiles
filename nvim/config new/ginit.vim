@@ -17,9 +17,10 @@ set guitablabel=\[%N\]\ %t\ %M
 "set guifont=Droid\ Sans\ Mono\ for\ Powerline:h15
 "GuiFont! UbuntuMono\ NF:h12
 "set guifont=UbuntuMono\ NF:h12
-GuiFont! Hack\ Nerd\ Font:h13
-"GuiFont! JetBrainsMono\ Nerd\ Font:h13
-set guifont=JetBrainsMono\ Nerd\ Font
+"GuiFont! Hack\ Nerd\ Font:h13
+GuiFont! JetBrainsMono\ Nerd\ Font:h13
+"set guifont=JetBrainsMono\ Nerd\ Font
 
 " Set key map to paste 
 "inoremap <silent> <S-Insert> <C-R>+
+"JetBrainsMono Nerd Font
