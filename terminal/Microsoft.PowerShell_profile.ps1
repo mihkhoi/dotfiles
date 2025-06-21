@@ -3,7 +3,7 @@ Set-Alias tt tree
 Set-Alias ll ls
 Set-Alias g git
 Set-Alias vim neovide
-
+Set-Alias vi nvim
 
 #Prompt
 oh-my-posh init pwsh --config 'C:/Users/lolme/scoop/apps/oh-my-posh/theme.omp.json' | Invoke-Expression
