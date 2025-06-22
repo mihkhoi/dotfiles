@@ -1,12 +1,31 @@
-require('nvim-treesitter.configs').setup({
-    ensure_installed = { "vim", "lua" }, -- có thể thêm các ngôn ngữ khác như "cpp", "python", v.v.
+require("nvim-treesitter.configs").setup({
+	ensure_installed = { "lua", "vim", "cpp" },
+	sync_install = false,
+	auto_install = true,
 
-    highlight = {
-        enable = true,       -- bật highlight
-        additional_vim_regex_highlighting = false, -- tắt highlight cũ của Vim
-    },
+	highlight = {
+		enable = true,
+		additional_vim_regex_highlighting = false,
+	},
 
-    indent = {
-        enable = true,       -- bật indent theo cú pháp
-    },
+	indent = {
+		enable = true,
+	},
+
+	autopairs = {
+		enable = true,
+	},
+
+	autotag = {
+		enable = true,
+	},
+
+	playground = {
+		enable = true,
+	},
+
+	rainbow = {
+		enable = true,
+		extended_mode = true,
+	},
 })
