@@ -4,6 +4,7 @@
 - [Scoop](https://scoop.sh/)
 - [Chocolatey](https://chocolatey.org/install)
 - [Cài đặt terminal](https://github.com/mihkhoi/dotfiles/tree/master/terminal)
+- [Font](https://www.nerdfonts.com/font-downloads) JetBrainsMono Nerd Font
   
 ## 2. Cài môi trường cho plugin
 - [Git](https://git-scm.com/downloads)
