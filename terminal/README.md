@@ -36,3 +36,16 @@ Vd: C:\Users\lolme\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
 Mở lên copy bộ cài ở [Microsoft.PowerShell_profile.ps1](https://github.com/mihkhoi/dotfiles/blob/master/terminal/Microsoft.PowerShell_profile.ps1)
 
 ## 3. Tải các icon và lịch sử cho powershell
+```sh
+Install-Module -Name Terminal-Icons -Repository PSGallery -Force
+```
+```sh
+Import-Module Terminal-Icons
+```
+```sh
+Install-Module -Name  PSReadline -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
+```
+```sh
+Set-PSReadlineOption -PredictionViewStyle ListView
+```
+[Tham khảo](https://www.youtube.com/watch?v=fviSilPKIhs&list=WL&index=5&t=439s)
