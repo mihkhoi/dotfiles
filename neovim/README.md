@@ -89,7 +89,53 @@ Tôi cũng đã config trong file [mason.lua](https://github.com/mihkhoi/dotfile
 
 Trong đó có mấy dòng ensure_installed có nghĩa là khi cài plug xong vào khỏi động lại nvim thì mason sẽ tự động tải các ngôn ngữ mà bạn muốn cài tự động
 
-Có 3 loại lspconfig ngôn ngữ bạn muốn code, null-ls là format, nvim-dap là debug
+Có 4 loại lspconfig ngôn ngữ bạn muốn code, null-ls là format, nvim-dap là debug, Linter là tìm lỗi
+
+Config format
+
+Tạo file config vào thư mục chứa file config
+
+Vd: C:\Users\lolme\AppData\Local\nvim\lua\format
+
+```sh
+notepad .clang-format
+```
+Mở file mới tạo thêm config vào
+
+Vd:
+
+```sh
+# Cấu hình cơ bản
+BasedOnStyle: Google         # Có thể dùng: LLVM, Google, Chromium, Mozilla, WebKit, Microsoft
+IndentWidth: 4               # Số khoảng trắng để thụt lề
+TabWidth: 4                  # Chiều rộng của tab nếu dùng
+UseTab: Never                # Có thể là: Never, ForIndentation, Always
+ColumnLimit: 100            # Giới hạn chiều dài dòng
+AllowShortIfStatementsOnASingleLine: false
+BreakBeforeBraces: Allman    # Có thể là Attach, Allman, Linux, Mozilla, Stroustrup, WebKit
+IncludeBlocks: Regroup      # Sắp xếp và gom các include lại
+
+# Format cho pointer/reference
+PointerAlignment: Left       # Left: int* x; Right: int *x;
+
+# Sort includes
+SortIncludes: true
+
+# Sắp xếp thứ tự access trong class
+SortUsingDeclarations: true
+AccessModifierOffset: -4
+```
+Giải thích một số hàm
+
+| **Name**                          | **Description**                                                             |
+|----------------------------------|-----------------------------------------------------------------------------|
+| **BasedOnStyle**                 | Chọn style mặc định, sau đó bạn có thể override từng tuỳ chọn riêng lẻ     |
+| **BreakBeforeBraces**            | Điều khiển dấu `{` nằm trên dòng mới hay cùng dòng                         |
+| **AllowShortFunctionsOnASingleLine** | Format hàm ngắn trên một dòng hay không                                    |
+| **AlignAfterOpenBracket**        | Canh chỉnh argument (đối số) của hàm sau dấu mở ngoặc                      |
+| **SpaceBeforeParens**            | Thêm dấu cách trước dấu `(` của hàm (hoặc control statement)               |
+| **ReflowComments**               | Gộp nhiều dòng comment lại thành một dòng nếu có thể                       |
+| **IndentCaseLabels**             | Có thụt lề `case` trong `switch` hay không                                 |
 
 Bạn không muốn cài tự động thì có cài thủ công 
 ```sh
@@ -97,7 +143,7 @@ Bạn không muốn cài tự động thì có cài thủ công
 ```
 Khi cài xong ngôn ngữ thì bạn phải thêm vào file config [lsp.lua](https://github.com/mihkhoi/dotfiles/blob/master/neovim/nvim/lua/plugins/lsp.lua) ở dông servers
 
-Format thì bạn vào file config [none-ls](https://github.com/mihkhoi/dotfiles/blob/master/neovim/nvim/lua/plugins/none-ls.lua) thêm vào dòng sources
+Format và Linter thì bạn vào file config [none-ls](https://github.com/mihkhoi/dotfiles/blob/master/neovim/nvim/lua/plugins/none-ls.lua) thêm vào dòng sources
 
 Debug thì bạn mở file config [dap.lua](https://github.com/mihkhoi/dotfiles/blob/master/neovim/nvim/lua/plugins/dap.lua) Bạn có tự config các [adapter](https://codeberg.org/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation)
 
