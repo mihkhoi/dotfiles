@@ -95,7 +95,7 @@ Config format
 
 Tạo file config vào thư mục chứa file config
 
-Vd: C:\Users\lolme\AppData\Local\nvim\lua\format
+Vd: C:\Users\lolme\AppData\Local\nvim\lua\config\format
 
 ```sh
 notepad .clang-format
