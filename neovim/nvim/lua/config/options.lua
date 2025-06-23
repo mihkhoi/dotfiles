@@ -65,6 +65,7 @@ vim.api.nvim_create_autocmd("FileChangedShellPost", {
 })
 
 -- Set colorscheme
+vim.opt.termguicolors = true
 vim.cmd("colorscheme dracula") -- hoặc "onedark" nếu bạn thích
 
 -- Set winbar lspsaga theme dracula
