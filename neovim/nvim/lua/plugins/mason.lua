@@ -27,7 +27,7 @@ require("mason-lspconfig").setup({
 
 -- Formatters / Linters
 require("mason-null-ls").setup({
-	ensure_installed = { "clang-format", "stylua" },
+	ensure_installed = { "clang-format", "stylua", "ast_grep" },
 	automatic_installation = true,
 })
 -- Debug
