@@ -43,3 +43,14 @@ require("lspconfig").lua_ls.setup({
 		},
 	},
 })
+
+require("lspconfig").clangd.setup({
+	cmd = {
+		"C:/mingw64/bin/clangd.exe",
+		"--query-driver=C:/mingw64/bin/g++.exe",
+	},
+	root_dir = function(fname)
+		local util = require("lspconfig.util")
+		return util.root_pattern(".clangd", ".git", "compile_commands.json")(fname) or util.path.dirname(fname)
+	end,
+})

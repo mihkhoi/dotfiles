@@ -70,7 +70,7 @@ null_ls.setup({
 
 	-- Format khi lưu (nếu LSP hỗ trợ và là null-ls)
 	on_attach = function(client, bufnr)
-		if client.supports_method("textDocument/formatting") then
+		if client:supports_method("textDocument/formatting") then
 			vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
 
 			vim.api.nvim_create_autocmd("BufWritePre", {
