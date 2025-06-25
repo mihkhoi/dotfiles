@@ -152,3 +152,24 @@ Debug thì bạn mở file config [dap.lua](https://github.com/mihkhoi/dotfiles/
 ```sh
 :TSInstall <language_to_install>
 ```
+## 5. Lưu ý
+
+Tôi xài nhiều về c++
+
+-[Cài môi trường c++](https://winlibs.com/) Chọn đường link không có without
+-Về lsp c++ tôi cài thủ công trong [lsp.lua](https://github.com/mihkhoi/dotfiles/blob/master/neovim/nvim/lua/plugins/lsp.lua)
+-Copy fiile [devcpp_timer.h](https://github.com/mihkhoi/dotfiles/blob/master/neovim/devcpp_timer.h) vào include khi bạn tải mingw64
+
+Vd: C:\mingw64\include
+
+-Nếu bạn có xài thêm [neovide](https://neovide.dev/index.html) một loại gui khác cho neovim thì tạo neovide copy file [config.toml](https://github.com/mihkhoi/dotfiles/blob/master/neovim/config.toml)vào neovide trong Roaming
+
+Vd: C:\Users\lolme\AppData\Roaming\neovide
+
+[Tham khảo](https://neovide.dev/config-file.html)
+
+Này quan trọng lỗi :checkhealth do floaterm dùng vim cũ 
+
+Cách 1: Bạn có thể đổi sang xài [tggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
+
+Cách 2: Khi bạn git clone về copy file floaterm.vim nằm trong thư mục dotfiles\neovim\nvim-data\site\pack\packer\start\vim-floaterm\autoload\health rồi dán vào file floaterm.vim có trong thư mục Vd: C:\Users\lolme\AppData\Local\nvim-data\site\pack\packer\start\vim-floaterm\autoload\health là hết lỗi
