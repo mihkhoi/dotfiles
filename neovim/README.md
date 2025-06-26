@@ -172,4 +172,4 @@ Này quan trọng lỗi :checkhealth do floaterm dùng vim cũ
 
 Cách 1: Bạn có thể đổi sang xài [tggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
 
-Cách 2: Khi bạn git clone về copy file floaterm.vim nằm trong thư mục dotfiles\neovim\nvim-data\site\pack\packer\start\vim-floaterm\autoload\health rồi dán vào file floaterm.vim có trong thư mục Vd: C:\Users\lolme\AppData\Local\nvim-data\site\pack\packer\start\vim-floaterm\autoload\health là hết lỗi
+Cách 2: Khi bạn bạn tải dotfiles ở [google drive](https://drive.google.com/drive/folders/1ogQmPnrmjwt_4HhafuFDBbeaSZ_tV813) về copy file floaterm.vim nằm trong thư mục dotfiles\neovim\nvim-data\site\pack\packer\start\vim-floaterm\autoload\health rồi dán vào file floaterm.vim có trong thư mục Vd: C:\Users\lolme\AppData\Local\nvim-data\site\pack\packer\start\vim-floaterm\autoload\health là hết lỗi
