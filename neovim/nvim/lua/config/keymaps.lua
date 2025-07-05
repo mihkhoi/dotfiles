@@ -11,7 +11,7 @@ keymap("n", "<M-Up>", ":resize -1<CR>", opts)
 keymap("v", "//", [[y/\V<C-R>=escape(@",'/\')<CR><CR>]], opts)
 
 -- Clear search highlight with <Esc>
-keymap("n", "<Esc>", ":noh<CR>", { noremap = true, silent = true })
+keymap("n", "<Esc>", ":noh<CR>", opts)
 
 -- Buffers and redo
 keymap("n", "<S-w>", ":bd<CR>", opts) -- Close buffer
@@ -38,3 +38,10 @@ keymap("n", "<leader>dp", ":DapPause<CR>", opts)
 
 -- Noice
 keymap("n", "<leader>h", ":NoiceHistory<CR>", opts)
+
+-- Terminal mode: dùng <Esc> để thoát insert mode (về normal mode)
+keymap("t", "<Esc>", "<C-\\><C-n>", opts)
+
+-- Compile and run code
+keymap("n", "<C-M-n>", ":CompileAndRunCodeOut<CR>", opts)
+keymap("n", "<C-M-m>", ":CompileAndRunCodeIn<CR>", opts)

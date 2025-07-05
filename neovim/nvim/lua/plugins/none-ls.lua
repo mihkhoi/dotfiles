@@ -65,6 +65,12 @@ null_ls.setup({
 			},
 		}),
 		null_ls.builtins.formatting.stylua,
+		null_ls.builtins.formatting.prettier.with({
+			extra_args = {
+				"--config",
+				"C:/Users/lolme/AppData/Local/nvim/lua/config/format/.prettierrc",
+			},
+		}),
 		ast_grep,
 	},
 

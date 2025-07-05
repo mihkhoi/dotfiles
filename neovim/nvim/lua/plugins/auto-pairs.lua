@@ -1,9 +1,12 @@
 require("nvim-autopairs").setup({
-	check_ts = true, -- bật nếu bạn dùng treesitter để hiểu ngữ cảnh
+	check_ts = true,
+	ts_config = {
+		html = { "string" }, -- chỉ enable trong string context
+	},
 	disable_filetype = { "TelescopePrompt", "vim" },
 	fast_wrap = {
-		map = "<M-e>", -- Alt + e để bao nhanh
-		chars = { "{", "[", "(", '"', "'", "`" },
+		map = "<M-e>",
+		chars = { "{", "[", "(", '"', "'", "`", "<" },
 		pattern = string.gsub([[ [%'%"%)%>%]%)%}%,] ]], "%s+", ""),
 		offset = 0,
 		end_key = "$",

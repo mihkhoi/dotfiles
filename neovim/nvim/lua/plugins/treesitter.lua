@@ -1,5 +1,5 @@
 require("nvim-treesitter.configs").setup({
-	ensure_installed = { "lua", "vim", "cpp" },
+	ensure_installed = { "lua", "cpp", "html", "css" },
 	sync_install = false,
 	auto_install = false,
 
@@ -16,10 +16,6 @@ require("nvim-treesitter.configs").setup({
 		enable = true,
 	},
 
-	autotag = {
-		enable = true,
-	},
-
 	playground = {
 		enable = true,
 	},
@@ -29,3 +25,5 @@ require("nvim-treesitter.configs").setup({
 		extended_mode = true,
 	},
 })
+
+require("nvim-ts-autotag").setup()

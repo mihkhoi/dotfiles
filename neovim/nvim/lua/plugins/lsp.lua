@@ -25,7 +25,7 @@ end
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 local lspconfig = require("lspconfig")
-local servers = { "lua_ls", "vimls", "clangd", "pyright", "ts_ls", "cssls" } -- bỏ jdtls
+local servers = { "lua_ls", "ts_ls", "cssls", "html" } -- bỏ jdtls
 
 for _, server in ipairs(servers) do
 	lspconfig[server].setup({
@@ -35,6 +35,8 @@ for _, server in ipairs(servers) do
 end
 
 require("lspconfig").lua_ls.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
 	settings = {
 		Lua = {
 			diagnostics = {
@@ -51,6 +53,8 @@ require("lspconfig").clangd.setup({
 	},
 	root_dir = function(fname)
 		local util = require("lspconfig.util")
-		return util.root_pattern(".clangd", ".git", "compile_commands.json")(fname) or util.path.dirname(fname)
+		return util.path.dirname(fname)
 	end,
+	on_attach = on_attach,
+	capabilities = capabilities,
 })

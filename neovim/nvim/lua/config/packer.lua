@@ -59,13 +59,13 @@ return require("packer").startup(function(use)
 	use("hrsh7th/nvim-cmp")
 
 	-- Luasnip
-    use("L3MON4D3/LuaSnip")
+	use("L3MON4D3/LuaSnip")
 
 	-- Lspkind
 	use("onsails/lspkind.nvim")
 
 	-- Lspsage
-	use("nvimdev/lspsaga.nvim")
+	--use("nvimdev/lspsaga.nvim")
 
 	-- Code syntax highight
 	use("nvim-treesitter/nvim-treesitter")
@@ -91,7 +91,6 @@ return require("packer").startup(function(use)
 
 	-- Startup
 	use("goolord/alpha-nvim")
-	use("echasnovski/mini.icons")
 
 	-- Noice
 	use({
@@ -101,6 +100,9 @@ return require("packer").startup(function(use)
 			"rcarriga/nvim-notify",
 		},
 	})
+
+	-- Autotag
+	use("windwp/nvim-ts-autotag")
 
 	-- Tự động sync nếu lần đầu cài packer
 	if packer_bootstrap then

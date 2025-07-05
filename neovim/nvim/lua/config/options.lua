@@ -8,7 +8,7 @@ vim.o.expandtab = true
 
 -- Line numbers
 vim.wo.number = true
-vim.wo.relativenumber = true
+vim.wo.relativenumber = false
 
 -- Folding
 vim.o.foldmethod = "syntax"
@@ -30,7 +30,7 @@ vim.o.lazyredraw = false
 
 -- Font (GVim / GUI only)
 vim.o.termguicolors = true
-vim.o.guifont = "JetBrainsMono Nerd Font:h13"
+vim.o.guifont = "JetBrainsMono Nerd Font:13"
 
 -- Sign column
 vim.wo.signcolumn = "number"
@@ -116,18 +116,4 @@ vim.diagnostic.config({
 	underline = true,
 	update_in_insert = false,
 	severity_sort = true,
-})
-
--- Compile and run C++ with <leader>d
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = "cpp",
-	callback = function()
-		vim.api.nvim_buf_set_keymap(
-			0,
-			"n",
-			"<leader>d",
-			[[:silent! w<CR>:silent! execute '!g++ -std=c++17 % -o %:r && start cmd /c "%:r"' <CR>:redraw!<CR>]],
-			{ noremap = true, silent = true }
-		)
-	end,
 })

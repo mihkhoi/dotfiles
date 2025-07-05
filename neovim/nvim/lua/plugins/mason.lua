@@ -21,13 +21,13 @@ require("mason").setup({
 
 -- LSP Servers
 require("mason-lspconfig").setup({
-	ensure_installed = { "lua_ls" },
+	ensure_installed = { "lua_ls", "cssls", "html", "ts_ls" },
 	automatic_installation = true,
 })
 
 -- Formatters / Linters
 require("mason-null-ls").setup({
-	ensure_installed = { "clang-format", "stylua", "ast_grep" },
+	ensure_installed = { "clang-format", "stylua", "ast_grep", "prettier" },
 	automatic_installation = true,
 })
 -- Debug
